@@ -4,10 +4,10 @@ build:
     commands:
     - composer install
     - vendor/bin/phpunit
-  phpcs:
+  eslint:
     image: dangminhtruong/dockerlaravel
     commands:
-    - phpcs app/Civ3/
+    - eslint resources/assets/js
 compose:
   database:
     image: mysql
