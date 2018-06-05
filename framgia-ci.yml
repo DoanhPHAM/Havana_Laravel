@@ -1,6 +1,6 @@
 build:
   phpunit:
-    image: framgia/laravel-workspace
+    image: dangminhtruong/dockerlaravel
     commands:
     - composer install
     - vendor/bin/phpunit
